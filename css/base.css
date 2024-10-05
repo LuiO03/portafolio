@@ -1,0 +1,81 @@
+/* Barra Lateral para Desktop */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #f8f9fa;
+  padding-top: 56px; /* Altura de la navbar fija */
+  overflow-y: auto;
+  border-right: 1px solid #3b3b3b;
+}
+
+.nav {
+  flex-grow: 1; /* Permite que la lista de navegación crezca y ocupe el espacio disponible */
+  justify-content: center; /* Centra el contenido verticalmente */
+}
+
+/* Contenido Principal */
+.main-content {
+  margin-left: 0;
+  transition: margin-left 0.3s;
+}
+
+
+@media (min-width: 992px) {
+  .main-content {
+    margin-left: 250px; /* Ancho de la barra lateral */
+  }
+}
+
+/* Ajustes del Header para que ocupe el ancho completo */
+@media (min-width: 992px) {
+  .header-section {
+    height: calc(100vh - 56px); /* Restar altura de navbar */
+  }
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  display: inline-flex; /* Alinea el icono dentro del enlace */
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Ajusta el tamaño */
+  height: 40px; /* Ajusta el tamaño */
+  border: 1px solid white; /* Borde inicial */
+  border-radius: 50%; /* Borde circular */
+  transition: background-color 0.3s, border-color 0.3s; /* Transiciones suaves */
+}
+
+.social-icon:hover {
+  background-color: black; /* Color de fondo al hacer hover */
+  border-color: #28a745; /* Color del borde al hacer hover */
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover; /* Asegura que la imagen ocupe el espacio sin deformarse */
+}
+
+.btn-success {
+  background-color: #28a745; /* Color verde de Bootstrap */
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #218838; /* Color verde más oscuro al pasar el mouse */
+}

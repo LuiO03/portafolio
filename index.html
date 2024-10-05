@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luis Quispe Osorio - Desarrollador</title>
+        <meta name="author" content="Luis Quispe Osorio">
+        <meta name="description" content="Portafolio de desarrollo web de Luis Quispe Osorio">
+        <meta name="keywords" content="desarrollador, programación, portafolio, freelance">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Remix Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/58fc50b085.js" crossorigin="anonymous"></script>
+
+        <!-- Favicon -->
+        <link rel="icon" href="img/hoja.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="css/base.css">
+    </head>
+
+    <body id="inicio">
+        <!-- Navegación Superior (Visible en Móviles) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top d-lg-none">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/logo.png" alt="Logo de Luis Quispe" width="150" class="me-2">
+            </a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="ri-menu-3-line"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Inicio -->
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#inicio">
+                            <i class="ri-home-line me-1"></i> Inicio
+                        </a>
+                    </li>
+                    <!-- Sobre Mí -->
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#sobre-mi">
+                            <i class="ri-user-line me-1"></i> Sobre Mí
+                        </a>
+                    </li>
+                    <!-- Especialidades -->
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#especialidades">
+                            <i class="ri-star-line me-1"></i> Especialidades
+                        </a>
+                    </li>
+                    <!-- Lenguajes de Código -->
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#habilidades">
+                            <i class="ri-code-line me-2"></i> Habilidades
+                        </a>
+                    </li>
+                    <!-- Portafolio -->
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#portafolio">
+                            <i class="ri-folder-line me-1"></i> Portafolio
+                        </a>
+                    </li>
+                    <!-- Blog -->
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#blog">
+                            <i class="ri-book-read-line me-1"></i> Blog
+                        </a>
+                    </li>
+                    <!-- Contacto -->
+                    <li class="nav-item">
+                        <a class="btn btn-success btn-l mt-2" href="#contacto">
+                            <i class="ri-mail-line me-1"></i> Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Barra Lateral (Visible en Desktop) -->
+    <div class="sidebar d-none d-lg-block bg-black d-flex flex-column pt-5" style="height: 100vh;">
+        <a class="navbar-brand d-flex justify-content-center align-items-center w-100" href="#">
+            <img src="img/logo.png" alt="Logo de Luis Quispe" width="150" class="me-2">
+            <!-- Puedes agregar un icono al lado del logo si lo deseas -->
+        </a>
+
+        <ul class="nav flex-column justify-content-center flex-grow-1 gap-1 pt-5 ps-5">
+            <!-- Inicio -->
+            <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#inicio">
+                    <i class="ri-home-line me-2"></i> Inicio
+                </a>
+            </li>
+            <!-- Sobre Mí -->
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#sobre-mi">
+                    <i class="ri-user-line me-2"></i> Sobre Mí
+                </a>
+            </li>
+            <!-- Especialidades -->
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#especialidades">
+                    <i class="ri-star-line me-2"></i> Especialidades
+                </a>
+            </li>
+            <!-- Lenguajes de Código -->
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#habilidades">
+                    <i class="ri-code-line me-2"></i> Habilidades
+                </a>
+            </li>
+            <!-- Portafolio -->
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#portafolio">
+                    <i class="ri-folder-line me-2"></i> Portafolio
+                </a>
+            </li>
+            <!-- Blog -->
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#blog">
+                    <i class="ri-book-read-line me-2"></i> Blog
+                </a>
+            </li>
+            <!-- Contacto -->
+            <li class="nav-item mt-3">
+                <a class="btn btn-success w-60" href="#contacto">
+                    <i class="ri-mail-line me-2"></i> Contacto
+                </a>
+            </li>
+        </ul>
+    </div>
+
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            
+            <header class="header-section text-white position-relative p-5" style="height: 100vh; padding-top: 56px;">
+                <!-- Video de fondo -->
+                <video autoplay muted loop class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover;">
+                    <source src="img/fondo.mp4" type="video/mp4">
+                    Tu navegador no soporta videos HTML5.
+                </video>
+            
+                <!-- Overlay -->
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50"></div>
+            
+                <!-- Contenido del Header -->
+                <div class="container position-relative h-100 d-flex flex-wrap align-items-center w-79">
+                    
+                    <!-- Texto y Presentación -->
+                    <div class="col-md-6 text-start d-flex flex-column justify-content-center h-100 gap-4">
+                        <h1 class="display-4 fw-bold">Luis Quispe Osorio</h1>
+                        <h3 class="mb-2"><strong>Freelance Web Designer & Developer</strong></h3>
+                        <p class="fs-5 mb-4">
+                            <strong>Experiencia:</strong> 5+ años en diseño y desarrollo web <br>
+                            <strong>Especialidad:</strong> Diseño UI/UX, Desarrollo Frontend y Backend
+                        </p>
+                        
+                        <!-- Redes Sociales -->
+                        <div class="social-icons d-flex gap-3 p-3">
+                            <a href="https://www.facebook.com/tu-perfil" class="social-icon text-white text-decoration-none rounded-circle p-3" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                            <a href="https://twitter.com/tu-perfil" class="social-icon text-white text-decoration-none rounded-circle p-3" aria-label="Twitter"><i class="ri-twitter-fill"></i></a>
+                            <a href="https://www.linkedin.com/in/tu-perfil" class="social-icon text-white text-decoration-none rounded-circle p-3" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                            <a href="https://github.com/tu-perfil" class="social-icon text-white text-decoration-none rounded-circle p-3" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+                        </div>
+                    
+                        <a href="#portafolio" class="btn btn-success rounded-pill mb-4 w-50">
+                            <i class="ri-rocket-line me-2"></i> Ver Portafolio
+                        </a>
+                    </div>
+                    
+            
+                    <!-- Imagen -->
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <img src="img/perfil.png" alt="Foto de Luis Quispe Osorio" width="250px" class="img-fluid rounded-circle border border-1 border-success d-none d-md-block">
+                    </div>
+                </div>
+            </header>
+            
+            
+            <article  class="bg-dark text-white p-0">
+
+                <!-- Sección Sobre Mí -->
+                <section id="sobre-mi" class="p-5 bg-black">
+                    <div class="container">
+                        <h2 class="mb-4">
+                            <i class="ri-information-line me-2"></i> Sobre Mí
+                        </h2>
+                        <p>Hola, soy Luis Quispe Osorio, un desarrollador web apasionado por crear soluciones innovadoras y eficientes. Con experiencia en tecnologías como HTML, CSS, JavaScript y frameworks modernos, me dedico a transformar ideas en realidades digitales.</p>
+                    </div>
+                </section>
+
+                <!-- Sección Especialidades -->
+                <section id="especialidades" class="px-1 py-5 p-sm-5 w-100">
+                    <div class="container">
+                        <h2 class="mb-4">
+                            <i class="ri-star-line me-2"></i> Especialidades
+                        </h2>
+                        <div class="row g-4">
+                            <!-- Especialidad 1: Desarrollo Frontend -->
+                            <div class="col-md-4">
+                                <div class="card h-100 text-center">
+                                    <div class="card-body d-flex flex-column">
+                                        <i class="ri-braces-line ri-3x mb-3"></i>
+                                        <h5 class="card-title">Desarrollo Frontend</h5>
+                                        <p class="card-text">Especializado en la creación de interfaces de usuario interactivas y responsivas utilizando HTML, CSS, JavaScript y frameworks como React.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Especialidad 2: Desarrollo Backend -->
+                            <div class="col-md-4">
+                                <div class="card h-100 text-center">
+                                    <div class="card-body d-flex flex-column">
+                                        <i class="ri-server-line ri-3x mb-3"></i>
+                                        <h5 class="card-title">Desarrollo Backend</h5>
+                                        <p class="card-text">Experiencia en la construcción de APIs robustas y eficientes con Node.js, Express y bases de datos como MongoDB y PostgreSQL.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Especialidad 3: Diseño UI/UX -->
+                            <div class="col-md-4">
+                                <div class="card h-100 text-center">
+                                    <div class="card-body d-flex flex-column">
+                                        <i class="ri-pencil-ruler-line ri-3x mb-3"></i>
+                                        <h5 class="card-title">Diseño UI/UX</h5>
+                                        <p class="card-text">Capacidad para diseñar experiencias de usuario intuitivas y atractivas, enfocándome en la usabilidad y la estética visual.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Agrega más especialidades según sea necesario -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sección Habilidades Técnicas -->
+                <section id="habilidades" class="px-1 py-5 p-sm-5 bg-black">
+                    <div class="container">
+                        <h2 class="mb-4">
+                            <i class="ri-tools-line me-2"></i> Habilidades Técnicas
+                        </h2>
+                        <div class="row g-4">
+                            <!-- Habilidad 1: HTML5 -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card text-center h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <i class="ri-html5-line ri-3x mb-3" style="color: #E34F26;"></i>
+                                        <h5 class="card-title">HTML5</h5>
+                                        <p class="card-text">Estructuración y semántica de páginas web.</p>
+                                        <div class="mt-auto">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Habilidad 2: CSS3 -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card text-center h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <i class="ri-css3-line ri-3x mb-3" style="color: #1572B6;"></i>
+                                        <h5 class="card-title">CSS3</h5>
+                                        <p class="card-text">Estilización y diseño responsivo de sitios web.</p>
+                                        <div class="mt-auto">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Habilidad 3: JavaScript -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card text-center h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <i class="ri-javascript-line ri-3x mb-3" style="color: #F7DF1E;"></i>
+                                        <h5 class="card-title">JavaScript</h5>
+                                        <p class="card-text">Interactividad y lógica de negocio en aplicaciones web.</p>
+                                        <div class="mt-auto">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Habilidad 4: PHP -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card text-center h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <i class="fab fa-php fa-4x mb-3" style="color: #777BB4;"></i>
+                                        <h5 class="card-title">PHP</h5>
+                                        <p class="card-text">Desarrollo de aplicaciones web dinámicas y robustas.</p>
+                                        <div class="mt-auto">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Habilidad 5: Java -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card text-center h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <i class="fab fa-java fa-4x mb-3" style="color: #ef0000;"></i>
+                                        <h5 class="card-title">Java</h5>
+                                        <p class="card-text">Desarrollo de aplicaciones backend y soluciones empresariales.</p>
+                                        <div class="mt-auto">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Habilidad 6: WordPress -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card text-center h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <i class="ri-wordpress-line ri-3x mb-3" style="color: #21759B;"></i>
+                                        <h5 class="card-title">WordPress</h5>
+                                        <p class="card-text">Desarrollo de sitios web con WordPress y Elementor.</p>
+                                        <div class="mt-auto">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Habilidad 7: Joomla -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card text-center h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <i class="ri-joomla-line ri-3x mb-3" style="color: #A80039;"></i>
+                                        <h5 class="card-title">Joomla</h5>
+                                        <p class="card-text">Gestión de contenido y diseño de sitios web en Joomla.</p>
+                                        <div class="mt-auto">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Habilidad 8: Bases de Datos -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card text-center h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <i class="ri-database-2-line ri-3x mb-3" style="color: #4DB33D;"></i>
+                                        <h5 class="card-title">Bases de Datos</h5>
+                                        <p class="card-text">Gestión y diseño de bases de datos para aplicaciones.</p>
+                                        <div class="mt-auto">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Habilidad 9: Bootstrap -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card text-center h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <i class="ri-bootstrap-line ri-3x mb-3" style="color: #7952B3;"></i>
+                                        <h5 class="card-title">Bootstrap</h5>
+                                        <p class="card-text">Framework para desarrollo de diseño responsivo y mobile-first.</p>
+                                        <div class="mt-auto">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Sección Portafolio -->
+                <section id="portafolio" class="px-1 py-5 p-sm-5 ">
+                    <div class="container">
+                        <h2 class="mb-4">
+                            <i class="ri-folder-3-line me-2"></i> Portafolio
+                        </h2>
+                        <div class="row g-4">
+                            <!-- Proyecto 1 -->
+                            <<div class="col-md-6 col-lg-4">
+                                <div class="card h-100">
+                                    <img src="img/proyecto1.jpg" class="card-img-top" alt="Proyecto 1">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">ModaMarket</h5>
+                                        <p class="card-text">Sistema web centrado en la venta de prendas de vestir.</p>
+                                        <p class="card-text"><strong>Características:</strong> Carrito de compras, integración de pagos, gestión de inventario.</p>
+                                        <p class="card-text"><strong>Tecnologías:</strong> HTML, CSS, JavaScript, PHP, MySQL.</p>
+                                        <p class="card-text"><small>Fecha de Creación: Enero 2024</small></p>
+                                        <a href="#" class="btn btn-success mt-auto">
+                                            <i class="ri-eye-line me-2"></i> Ver Proyecto
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Proyecto 2 -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100">
+                                    <img src="img/proyecto2.jpg" class="card-img-top" alt="Proyecto 2">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">ModaMarket</h5>
+                                        <p class="card-text">Software centrado en la gestión de prendas de vestir.</p>
+                                        <p class="card-text"><strong>Características:</strong> Gestión de inventario.</p>
+                                        <p class="card-text"><strong>Tecnologías:</strong> Java, MySQL.</p>
+                                        <p class="card-text"><small>Fecha de Creación: Enero 2024</small></p>
+                                        <a href="#" class="btn btn-success mt-auto">
+                                            <i class="ri-eye-line me-2"></i> Ver Proyecto
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Proyecto 3 -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100">
+                                    <img src="img/proyecto3.jpg" class="card-img-top" alt="Forex Expeditions">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Forex Expeditions</h5>
+                                        <p class="card-text">Portal de turismo especializado en expediciones y viajes personalizados.</p>
+                                        <p class="card-text"><strong>Características:</strong> Reserva de viajes, itinerarios personalizados, atención al cliente 24/7.</p>
+                                        <p class="card-text"><strong>Tecnologías:</strong> HTML, CSS, JavaScript, PHP, MySQL, Bootstrap.</p>
+                                        <p class="card-text"><small>Fecha de Creación: Marzo 2024</small></p>
+                                        <a href="https://luio03.github.io/forex.github.io/" class="btn btn-success mt-auto">
+                                            <i class="ri-eye-line me-2"></i> Ver Proyecto
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Agrega más proyectos según sea necesario -->
+                        </div>
+                    </div>
+                </section>
+            
+                <!-- Sección Blog -->
+                <section id="blog" class="px-1 py-5 p-sm-5 ">
+                    <div class="container">
+                        <h2 class="mb-4">
+                            <i class="ri-book-read-line me-2"></i> Blog
+                        </h2>
+                        <div class="row g-4 ">
+                            <!-- Entrada 1 -->
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Título del Artículo</h5>
+                                        <p class="card-text">Extracto del artículo...</p>
+                                        <a href="#" class="btn btn-success mt-auto">
+                                            <i class="ri-arrow-right-line me-2"></i> Leer Más
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Entrada 2 -->
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Título del Artículo</h5>
+                                        <p class="card-text">Extracto del artículo...</p>
+                                        <a href="#" class="btn btn-success mt-auto">
+                                            <i class="ri-arrow-right-line me-2"></i> Leer Más
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Agrega más entradas según sea necesario -->
+                        </div>
+                    </div>
+                </section>
+            
+                <!-- Sección Contacto -->
+                <section id="contacto" class="px-1 py-5 p-sm-5 ">
+                    <div class="container">
+                        <h2 class="mb-4r">
+                            <i class="ri-mail-line me-2"></i> Contacto
+                        </h2>
+                        <div class="row">
+                            <!-- Formulario de Contacto -->
+                            <div class=" col-md-12">
+                                <form action="#" method="post">
+                                    <!-- Nombre -->
+                                    <div class="mb-4">
+                                        <label for="nombre" class="form-label">
+                                            <i class="ri-user-line me-2"></i> Nombre:
+                                        </label>
+                                        <input type="text" class="form-control form-control-lg rounded-pill" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                                    </div>
+                                    <!-- Correo Electrónico -->
+                                    <div class="mb-4">
+                                        <label for="email" class="form-label">
+                                            <i class="ri-mail-line me-2"></i> Correo Electrónico:
+                                        </label>
+                                        <input type="email" class="form-control form-control-lg rounded-pill" id="email" name="email" placeholder="Tu correo electrónico" required>
+                                    </div>
+                                    <!-- Mensaje -->
+                                    <div class="mb-4">
+                                        <label for="mensaje" class="form-label">
+                                            <i class="ri-message-3-line me-2"></i> Mensaje:
+                                        </label>
+                                        <textarea class="form-control form-control-lg rounded" id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+                                    </div>
+                                    <!-- Botón Enviar -->
+                                    <button type="submit" class="btn btn-success btn-lg rounded-pill px-5 w-100">
+                                        <i class="ri-send-plane-line me-2"></i> Enviar
+                                    </button>
+                                </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+
+
+            </article>
+            <!-- Footer -->
+            <footer class="bg-black text-white py-5 position-relative">
+                <div class="container">
+                    <div class="row">
+                        <!-- Sección de Navegación Rápida -->
+                        <div class="col-md-3 mb-4">
+                            <h5 class="mb-3">Navegación</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#inicio" class="text-white text-decoration-none">Inicio</a></li>
+                                <li><a href="#sobre-mi" class="text-white text-decoration-none">Sobre Mí</a></li>
+                                <li><a href="#especialidades" class="text-white text-decoration-none">Especialidades</a></li>
+                                <li><a href="#portafolio" class="text-white text-decoration-none">Portafolio</a></li>
+                                <li><a href="#blog" class="text-white text-decoration-none">Blog</a></li>
+                                <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Sección de Redes Sociales -->
+                        <div class="col-md-3 mb-4">
+                            <h5 class="mb-3">Sígueme</h5>
+                            <div class="d-flex gap-3">
+                                <a href="https://www.facebook.com/tu-perfil" class="social-icon text-white text-decoration-none rounded-circle p-3" aria-label="Facebook">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                                <a href="https://twitter.com/tu-perfil" class="social-icon text-white text-decoration-none rounded-circle p-3" aria-label="Twitter">
+                                    <i class="ri-twitter-fill"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/tu-perfil" class="social-icon text-white text-decoration-none rounded-circle p-3" aria-label="LinkedIn">
+                                    <i class="ri-linkedin-fill"></i>
+                                </a>
+                                <a href="https://github.com/tu-perfil" class="social-icon text-white text-decoration-none rounded-circle p-3" aria-label="GitHub">
+                                    <i class="ri-github-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Sección de Contacto -->
+                        <div class="col-md-3 mb-4">
+                            <h5 class="mb-3">Contacto</h5>
+                            <p>
+                                <i class="ri-mail-line me-2"></i>
+                                <a href="mailto:tucorreo@example.com" class="text-white text-decoration-none">tucorreo@example.com</a>
+                            </p>
+                            <p>
+                                <i class="ri-phone-line me-2"></i>
+                                <a href="tel:+1234567890" class="text-white text-decoration-none">+1 (234) 567-890</a>
+                            </p>
+                        </div>
+                        
+                        <!-- Sección de Suscripción al Boletín -->
+                        <div class="col-md-3 mb-4">
+                            <h5 class="mb-3">Suscríbete</h5>
+                            <form action="#" method="post" class="d-flex flex-column">
+                                <input type="email" class="form-control form-control-lg rounded-pill mb-2" id="suscripcionEmail" name="email" placeholder="Tu correo electrónico" required>
+                                <button type="submit" class="btn btn-success btn-lg rounded-pill">
+                                    <i class="ri-send-plane-line me-2"></i> Suscribirse
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <hr class="bg-white">
+                    <div class="text-center">
+                        <p class="mb-0">&copy; 2024 Luis Quispe Osorio. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+                
+                <!-- Botón para Ir Arriba -->
+                <button id="backToTopBtn" class="btn btn-success back-to-top" aria-label="Volver al inicio">
+                    <i class="ri-arrow-up-line"></i>
+                </button>
+            </footer>
+
+        </main>
+        
+        <!-- Bootstrap JS y dependencias -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
